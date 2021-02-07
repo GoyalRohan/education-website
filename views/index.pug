@@ -1,0 +1,93 @@
+doctype html
+html
+  head
+    title iEducate - Transforming Online Education 
+    style 
+      include ../static/style.css 
+  body
+    nav.navbar.background.h-nav-resp
+      ul.nav-list.v-class-resp
+        // //WHEN WE WRITE SOMETHING IN HREF IT MEANS THAT WHEN ON THAT LINK IS CLICK HTEN SCREEN WILL SCROLL TO THAT ID
+        .logo
+          img(src='static/img/laptop.jpg' alt='LOGO')
+        li
+          a(href='#home') Home
+        li
+          a(href='#about') About
+        li
+          a(href='#services') Services
+        li
+          a(href='#contact') Contact Us
+      .rightNav.v-class-resp
+        input#search(type='text' name='search')
+        button.btn.btn-sm Search
+      .burger
+        .line
+        .line
+        .line
+    section.background.firstSection
+      .box-main
+        .firstHalf
+          p.text-big The Future of Education is here
+          p.text-small
+            | In this world of 7 billion people we need to educate all of them. This is hte
+            | future of an educated world.and we are proud to say that The Future of Education is here
+          .buttons
+            button.btn Subscribe
+            button.btn Watch us
+        .secondHalf
+          img(src='static/img/laptop.jpg' alt='Laptop image')
+    section.secRight
+      .paras
+        p.sectionTag.text-big The end of your search is here
+        p.sectionSubTag.text-small
+          | Education is the process of facilitating learning, or the acquisition of
+          | knowledge, skills, values, morals, beliefs, and habits. Educational methods include teaching, training,
+          | storytelling, discussion and directed research. Education frequently takes place under the guidance of
+          | educators, however learners can also educate themselves. Education can take place in formal or informal
+          | settings and any experience that has a formative effect on the way one thinks, feels, or acts may be
+          | considered educational. The methodology of teaching is called pedagogy.
+      .thumbnail
+        img.imgFluid(src='https://source.unsplash.com/250x250/?coding,apple' alt='Laptop image')
+    section.section.section-left
+      .paras
+        p.sectionTag.text-big Transforming Education in India
+        p.sectionSubTag.text-small
+          | Education began in prehistory, as adults trained the young in the
+          | knowledge and skills deemed necessary in their society. In pre-literate societies, this was achieved
+          | orally and through imitation. Story-telling passed knowledge, values, and skills from one generation to
+          | the next. As cultures began to extend their knowledge beyond skills that could be readily learned
+          | through imitation, formal education developed. Schools existed in Egypt at the time of the Middle
+          | Kingdom.[2]
+          | Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in 1607
+          | Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3] The city of
+          | Alexandria in Egypt, established in 330 BCE, became the successor to Athens as the intellectual cradle
+          | of Ancient Greece.
+      .thumbnail
+        img.imgFluid(src='https://source.unsplash.com/250x250/?html,apple' alt='Laptop image')
+    section.secRight
+      .paras
+        p.sectionTag.text-big Lets Grow Together
+        p.sectionSubTag.text-small
+          | Joseph Chimombo pointed out education's role as a policy instrument,
+          | capable of instilling social change and economic advancement in developing countries by giving
+          | communities the opportunity to take control of their destinies.[43] The 2030 Agenda for Sustainable
+          | Development, adopted by the United Nations (UN) General Assembly in September 2015, calls for a new
+          | vision to address the environmental, social and economic concerns facing the world today. The Agenda
+          | includes 17 Sustainable Development Goals (SDGs), including SDG 4 on education.
+      .thumbnail
+        img.imgFluid(src='https://source.unsplash.com/250x250/?javascript,apple,nature,happy' alt='Laptop image')
+    section#contact.contact
+      h2.text-center Contact Us
+      
+      form(action="/" , method = "post")
+        input#name(type='text' name='name' placeholder='Enter Your Name')
+        input#phone(type='number' name='phone' placeholder='Enter Your phone')
+        input#email(type='email' name='email' placeholder='Enter Your Email')
+        textarea#text(name='desc' cols='30' rows='10' placeholder='Ellaborate Your concerns')
+        button.btn.btn-dark Submit
+    footer.background
+      p.text-footer
+        | Copyright &copy; 2027  www.iEducate.com - All Rights Reserved
+    script
+      include ../static/resp.js

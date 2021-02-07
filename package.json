@@ -1,0 +1,17 @@
+{
+  "name": "education_website",
+  "version": "1.0.0",
+  "description": "This is a very good Education Website made by Rohan",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohan Goyal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "pug": "^3.0.0"
+  }
+}
