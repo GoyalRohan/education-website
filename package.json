@@ -4,7 +4,8 @@
   "description": "This is a very good Education Website made by Rohan",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Rohan Goyal",
   "license": "ISC",
